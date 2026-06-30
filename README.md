@@ -6,7 +6,7 @@ This project provides a fully from scratch implementation of a "small" language 
 </p>
 
 # Overview
-First, given training data is divided into sequences of tokens (e.g. words or parts of them). Next, for each subsequence of the desired context length + 1 the corresponding transition probability [token-2,token-1] -> [token+0] is updated. Once this is done, each sub-sequence of tokens with up to context length gives a probability distribution over all possible next tokens. To generate the next output token, simply pull from that distribution (i.e. walk along the Markov chain).
+First, given training data is divided into sequences of tokens (e.g. words or parts of them). Next, for each subsequence of the desired context length + 1 the corresponding transition probability `[token-2,token-1] -> [token+0]` is updated. Once this is done, each sub-sequence of tokens with up to context length gives a probability distribution over all possible next tokens. To generate the next output token, simply pull from that distribution (i.e. walk along the Markov chain).
 
 # Features
 Lets you train your own Markov chain based language models provided any training data. Live demo contains 4 different models trained on vastly different types of data. It also allows viewing the distribution over all possible next tokens, as well as the current context and tokenized text.
