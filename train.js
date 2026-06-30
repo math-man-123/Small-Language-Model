@@ -61,9 +61,3 @@ function createModel(name, token, depth = 1) {
 
     chain.saveModel();
 }
-
-
-// createModel('president', crawlInputData(tokenizer, './data/president'), 3);
-// createModel('books', crawlInputData(tokenizer, './data/books'), 3);
-// createModel('reviews', crawlInputData(tokenizer, './data/reviews'), 3);
-// createModel('webtext', crawlInputData(tokenizer, './data/webtext'), 3);
